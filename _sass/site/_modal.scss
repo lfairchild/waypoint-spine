@@ -1,0 +1,70 @@
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0.6em;
+  background-color: rgba(0,0,0, 0.85);
+  transition: opacity 0.25s ease;
+  z-index: 9999999;
+  @media screen and (min-width: $large-screen) {
+    padding-top: 5em;
+  }
+}
+
+.modal-hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-inner {
+  background: white;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 0;
+  max-height: 95%;
+  overflow: auto;
+  padding: 1.5em;
+  position: relative;
+  transition: opacity 0.25s ease;
+  width: 95%;
+  @media screen and (min-width: $medium-screen) {
+    padding: 3em;
+    width: 60%;
+  }
+  @media screen and (min-width: $large-screen) {
+    width: 50%;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  background: white;
+  cursor: pointer;
+  &::after, &::before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    width: 0.15em;
+    height: 1.5em;
+    background: $light-gray;
+    content: "";
+    display: block;
+    margin: -3px 0 0 -1px;
+    transform: rotate(45deg);
+  }
+  &:hover::after, &:hover::before {
+    background: darken($light-gray, 10%);
+  }
+  &::before {
+    transform: rotate(-45deg);
+  }  
+}

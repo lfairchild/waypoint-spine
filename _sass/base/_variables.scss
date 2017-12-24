@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: $font-stack-system;
+$base-font-family: 'Montserrat', $font-stack-system;
 $heading-font-family: $base-font-family;
 
 // Line height
@@ -13,14 +13,16 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
+$red: #f05f5c;
 $blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$green: #01766e;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $green;
 
 // Border
 $base-border-color: $light-gray;
@@ -39,3 +41,7 @@ $focus-outline-offset: 2px;
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Grid
+$medium-screen: 40em;
+$large-screen: 53.75em;
