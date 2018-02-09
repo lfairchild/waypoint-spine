@@ -8,3 +8,4 @@
 * [X] Add favicon
 * [ ] Paralax local map
 * [ ] Have review thing fade into screen
+* [ ] Add microformats for address, etc
