@@ -1,0 +1,8 @@
+lang: en-US
+
+title: Waypoint Spine
+description: The most complete and specialized care for your back and neck, right here for you in Stevens Point.
+url: http://waypointspine.com
+timezone: America/Chicago
+
+exclude: ['Gemfile', 'Gemfile.lock']
