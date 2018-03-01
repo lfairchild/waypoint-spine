@@ -1,71 +1,43 @@
 ---
 layout: default
 title: Waypoint Spine
-description: The most complete and specialized care for your back and neck, right here for you in Stevens Point.
+description: Waypoint Spine offers the most specialized care for your back and neck.
 ---
 
 <header role="banner">
   <h1>{% include logo.svg %}</h1>
-  <nav>
-    <ul>
-      <li><a href="#" class="modal-open">Book an Appointment</a></li>
-    </ul>
-  </nav>
 </header>
 <div class="map-global-timezone">
   <div class="map-global-timezone-label">Stevens Point</div>
 </div>
 {% include map-global.svg %}
 <main>
-  <h1>The most complete and specialized care for your back and neck.</h1>
-  <p>Waypoint Spine includes physical therapy specific to spine care, and Dr. Fairchild's conservative treatment plans ensure that surgery is a last resort.</p>
-  <p>But, if back or neck surgery becomes necessary, there is no better orthopaedic spine surgeon than Dr. Todd Fairchild of Waypoint Spine.</p>
-  <p>When you need a premier spine care center, Waypoint Spine is right here for you in Stevens Point.</p>
+  <h1>Waypoint Spine offers the most specialized care for your back and neck.</h1>
+  <p>Orthopaedic Spine Surgeon <a href="https://www.healthgrades.com/physician/dr-todd-fairchild-22dvq">Todd A. Fairchild</a> and his team provide physical therapy and conservative treatment plans to ensure that surgery is a last resort</p>
+  <p>But, if spine surgery becomes necessary, there is no better surgeon than Dr. Fairchild of Waypoint Spine.</p>
+  <p>When you need premier care for your back and neck, Waypoint Spine is right here for you in Stevens Point.</p>
 </main>
 <figure class="map-local">
-  <img src="https://api.mapbox.com/styles/v1/mapbox/streets-v10/static/pin-l+01766e(-89.576808,44.530218)/-89.576808,44.530218,14/1280x400@2x?access_token=pk.eyJ1Ijoia2VlZ25vdHJ1YiIsImEiOiJjamI4MHhlaXkxZXp6MzNtenFpZ3ZreDl0In0.DAQwueudEPQTeBs-wNUe7w">
+  <img src="https://api.mapbox.com/styles/v1/mapbox/streets-v10/static/pin-l+333333(-89.576765,44.530202)/-89.576765,44.530202,14/1280x400@2x?access_token=pk.eyJ1Ijoia2VlZ25vdHJ1YiIsImEiOiJjamI4MHhlaXkxZXp6MzNtenFpZ3ZreDl0In0.DAQwueudEPQTeBs-wNUe7w">
   <figcaption>
-    <p class="meta-directions"><a class="button" target="_blank" href="https://maps.apple.com/?daddr=44.530218,-89.576808">Directions</a></p>
+    <p class="meta-directions"><a class="button" target="_blank" href="https://maps.apple.com/?daddr=520,Vincent+Street,Stevens+Point,Wisconsin">Directions</a></p>
     <h1 class="meta-name">Waypoint<br> Spine</h1>
     <p class="meta-rating">
       {% for i in (1..5) %}
-        {% include star.svg %}
+      {% include star.svg %}
       {% endfor %}
       <a target="_blank" href="https://www.healthgrades.com/physician/dr-todd-fairchild-22dvq">21&nbsp;reviews</a>
     </p>
     <p class="meta-description">Orthopaedic Spine Surgery &amp; Spine Physical Therapy</p>
     <hr>
-    <p class="meta-address"><strong>Address:</strong> 500 Vincent Street, Stevens Point, WI 54481</p>
+    <p class="meta-address"><strong>Address:</strong> 520 Vincent Street, Stevens Point, WI 54481</p>
     <p class="meta-phone"><strong>Phone:</strong> 715-544-1775</p>
-    <p class="meta-hours"><strong>Hours:</strong> 8:00am-4:00pm M-F</p>
+    <p class="meta-hours"><strong>Hours:</strong> 8:00am-5:00pm M-F</p>
   </figcaption>
 </figure>
 <footer>
   <p>Let Waypoint Spine lead you on your journey to a healthy back and neck today.</p>
-  <p><a class="button modal-open" href="#">Book an Appointment</a></p>
+  <p><a class="button" href="tel://+17155441775">Call 715-544-1775</a></p>
   <p class="copy copy-text">&copy; 2018 Waypoint Spine</p>
-  <p class="copy-text">500 Vincent Street, Stevens Point, WI 54481</p>
+  <p class="copy-text">520 Vincent Street, Stevens Point, WI 54481</p>
 </footer>
-<div id="modal" class="modal modal-hide">
-  <div class="modal-inner">
-    <div class="modal-close"></div>
-    <h1>Request a Callback</h1>
-    <form id="appointment-form" action="https://formspree.io/ryan@elbongurk.com" method="POST">
-      <p>
-        <label for="appointment-name">Name</label>
-        <input id="appointment-name" name="appointment-name" type="text">
-      </p>
-      <p>
-        <label for="appointment-phone">Phone</label>
-        <input id="appointment-phone" name="appointment-phone" type="tel">
-      </p>
-      <p>
-        <label for="appointment-comment">Comment</label>
-        <textarea id="appointment-comment" name="appointment-comment"></textarea>
-      </p>
-      <p>
-        <input id="appointment-submit" type="submit" value="Request Callback">
-      </p>
-    </form>
-  </div>
-</div>
