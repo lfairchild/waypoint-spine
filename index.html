@@ -95,16 +95,20 @@ description: Waypoint Spine is an orthopedic practice dedicated exclusively to t
 				
 			</header><!-- .entry-header -->
 
-			<div class="entry-content">
+			<div itemscope="" itemtype="http://schema.org/LocalBusiness" class="entry-content">
         <div class="googlemaps">
           <iframe width="600" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ "/map/" | relative_url }}"></iframe>          
         </div>
         <h3>Locations</h3>
-        <p><a href="{{ "/locations/stevens-point-wi/" | relative_url }}">520 Vincent Street<br />Stevens Point, WI 54481</a></p>
-        <p><a href="{{ "/locations/wausau-wi/" | relative_url }}">3301 Rib Mountain Drive<br />Wausau, WI 54401</a></p>
+        <p itemscope="" itemtype="http://schema.org/PostalAddress" itemprop="address">
+          <a href="{{ "/locations/stevens-point-wi/" | relative_url }}">520 Vincent Street<br />Stevens Point, WI 54481</a>
+        </p>
+        <p itemscope="" itemtype="http://schema.org/PostalAddress" itemprop="address">
+          <a href="{{ "/locations/wausau-wi/" | relative_url }}">3301 Rib Mountain Drive<br />Wausau, WI 54401</a>
+        </p>
         <h3>Office Hours</h3>
-        <p>8:00 a.m. - 4:00 p.m.<br />Monday through Friday</p>
-        <p>Phone: (715) 544-1775<br />Fax: (715) 544-1769</p>
+        <p><time itemprop="openingHours" datetime="Mo-Fr 08:00-16:00">8:00 a.m. - 4:00 p.m.<br />Monday through Friday</time></p>
+        <p>Phone: <span itemprop="telephone">(715) 544-1775</span><br />Fax: <span itemprop="faxNumber">(715) 544-1769</span></p>
 			</div><!-- .entry-content -->
 
 			
