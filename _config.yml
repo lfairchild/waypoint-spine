@@ -1,8 +1,10 @@
 lang: en-US
 
 title: Waypoint Spine
-description: The most complete and specialized care for your back and neck, right here for you in Stevens Point.
+description: Waypoint Spine is an orthopedic practice dedicated exclusively to the evaluation and treatment of disorders of the cervical, thoracic, and lumbar spine.
 url: http://waypointspine.com
 timezone: America/Chicago
 
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'CNAME']
+permalink: pretty
+
+exclude: ['Gemfile', 'Gemfile.lock', 'CNAME']

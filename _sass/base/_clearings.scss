@@ -1,0 +1,46 @@
+.clear::before,
+.clear::after,
+.entry-content::before,
+.entry-content::after,
+.comment-content::before,
+.comment-content::after,
+.site-header::before,
+.site-header::after,
+.site-content::before,
+.site-content::after,
+.site-footer::before,
+.site-footer::after,
+.nav-links::before,
+.nav-links::after,
+.comment-author::before,
+.comment-author::after,
+.widget::before,
+.widget::after,
+.entry-author::before,
+.entry-author::after,
+.comment-meta::before,
+.comment-meta::after,
+.testimonial-about::before,
+.testimonial-about::after,
+.portfolio-wrapper::before,
+.portfolio-wrapper::after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear::after,
+.entry-content::after,
+.comment-content::after,
+.site-header::after,
+.site-content::after,
+.site-footer::after,
+.nav-links::after,
+.comment-author::after,
+.widget::after,
+.entry-author::after,
+.comment-meta::after,
+.testimonial-about::after,
+.portfolio-wrapper::after {
+	clear: both;
+}

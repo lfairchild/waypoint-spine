@@ -1,15 +1,13 @@
-// Bitters 1.7.0
-// http://bitters.bourbon.io
-// Copyright 2013-2017 thoughtbot, inc.
-// MIT License
-
-@import "variables";
-
-@import "reset";
-@import "buttons";
-@import "forms";
-@import "layout";
-@import "lists";
-@import "media";
-@import "tables";
+@import "fonts";
+@import "normalize";
+@import "accessibility";
+@import "alignments";
+@import "clearings";
 @import "typography";
+@import "forms";
+@import "buttons";
+@import "formatting";
+@import "lists";
+@import "tables";
+@import "navigation";
+@import "links";

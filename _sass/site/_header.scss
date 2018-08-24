@@ -1,0 +1,113 @@
+#masthead .wrap {
+	position: relative;
+}
+
+.site-header {
+	background-color: #333;
+}
+
+/* Header top */
+.header-top {
+	background-color: #29292a;
+	color: #fff;
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.header-top .wrap {
+	padding: 0;
+}
+
+.header-top a,
+.header-top a:visited {
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.header-top a:hover,
+.header-top a:focus {
+	color: rgba(255,255,255,0.7);
+}
+
+.site-top-content {
+	line-height: 1.5;
+	padding: 0.75em 1.5em;
+}
+
+.main-navigation + .site-top-content {
+	padding-top: 0;
+}
+
+.site-top-content span.site-top-content-2 {
+	color: #999;
+	display: block;
+}
+
+/* Site branding */
+.site-branding {
+	color: #fff;
+	text-align: center;
+}
+
+.site-branding a {
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.site-branding a:hover,
+.site-branding a:focus {
+	opacity: 0.7;
+}
+
+.site-title {
+	font-family: "Work Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+	font-size: 30px;
+	font-size: 1.875rem;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.site-description {
+	font-size: 18px;
+	font-size: 1.125rem;
+	margin-bottom: 0;
+}
+
+.site-description,
+.site-description a {
+	color: #ccc;
+}
+
+.site-logo-link img {
+	max-height: 100px;
+	width: auto;
+}
+
+.custom-header-image {
+	background-position: center center;
+	background-size: cover;
+	padding: 10% 0;
+	position: relative;
+}
+
+.no-header-image .custom-header-image {
+	padding: 5% 0;
+}
+
+body:not(.no-header-image) .custom-header-image::before,
+.lodestar-front-page .custom-header-image::before {
+	background: rgba(0,0,0,0.5);
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}

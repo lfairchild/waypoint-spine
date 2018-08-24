@@ -1,0 +1,41 @@
+<aside id="secondary" class="widget-area" role="complementary">
+	<section id="search-3" class="widget widget_search">
+    <form role="search" method="get" class="search-form" action="https://www.google.com/search">
+			<label>
+				<span class="screen-reader-text">Search for:</span>
+				<input type="search" class="search-field" placeholder="Search …" value="" name="q">
+			</label>
+      <input type="hidden" name="sitesearch" value="waypointspine.com">
+		  <input type="submit" class="search-submit" value="Search">
+    </form>
+  </section>
+  <div itemscope="" itemtype="http://schema.org/LocalBusiness">
+    <section id="widget_contact_info-4" class="widget widget_contact_info">
+      <h2 class="widget-title">Office Hours</h2>
+      <div class="confit-hours">
+        <time itemprop="openingHours" datetime="Mo-Fr 08:00-16:00">8:00 a.m. - 4:00 p.m.<br/>Monday through Friday</time>
+      </div>
+      <br/>
+      <div class="confit-phone">
+        Phone: <span itemprop="telephone">(715) 544-1775</span>
+      </div>
+      <div class="confit-phone">
+        Fax: <span itemprop="faxNumber">(715) 544-1769</span>
+      </div>
+    </section>
+    <section id="widget_contact_info-3" class="widget widget_contact_info">
+      <h2 class="widget-title">Locations</h2>
+      <div class="contact-map-container">
+        <iframe width="600" height="216" frameborder="0" src="{{ "/map/" | relative_url }}" class="contact-map"></iframe>
+        <div class="contact-map-distractor"></div>
+      </div>
+      <div class="confit-address" itemscope="" itemtype="http://schema.org/PostalAddress" itemprop="address">
+        <a href="{{ "/locations/stevens-point-wi/" | relative_url }}">520 Vincent Street<br/>Stevens Point WI 54481</a>
+      </div>
+      <br/>
+      <div class="confit-address" itemscope="" itemtype="http://schema.org/PostalAddress" itemprop="address">
+        <a href="{{ "/locations/wausau-wi/" | relative_url }}">3301 Rib Mountain Drive<br/>Wausau WI 54401</a>
+      </div>
+    </section>
+  </div>
+</aside>

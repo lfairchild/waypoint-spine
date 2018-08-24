@@ -1,0 +1,52 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body, #map {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .googlemaps-location {
+        width: 140px;
+        height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var center = {lat: 44.793740, lng: -89.648149};
+        
+        var locations = [
+          ["{{ "/locations/stevens-point-wi/" | relative_url }}", 44.530215, -89.576768],
+          ["{{ "/locations/wausau-wi/" | relative_url }}", 44.926450, -89.652127]
+        ];
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: center,
+          disableDefaultUI: true
+        });
+        
+        for (var index = 0; index < locations.length; index++) {
+          var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[index][1], locations[index][2]),
+            map: map
+          });
+
+          google.maps.event.addListener(marker, 'click', (function (marker, index) {
+            return function () {
+              window.parent.location.href = locations[index][0];
+            }
+          })(marker, index));
+        }
+      };
+      </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwvmCQZJ9tMLFFnJOcEeMwOi93WDbskW0&callback=initMap"></script>
+  </body>
+</html>

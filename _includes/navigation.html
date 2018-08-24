@@ -1,0 +1,21 @@
+<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Top Menu">
+	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">Menu</button>
+	<div class="menu-main-menu-container">
+    <ul id="top-menu" class="menu">
+      {% for item in site.data.navigation.main %}
+      <li class="menu-item menu-item-type-custom menu-item-object-custom{% if item.url == page.url %} current-menu-item current_page_item{% endif %}{% if item.children[0] %} menu-item-has-children{% endif %}">
+        <a href="{{ item.url | relative_url }}">{{ item.page }}</a>
+        {% if item.children[0] %}
+        <ul class="sub-menu">
+          {% for child in item.children %}
+          <li class="menu-item menu-item-type-custom menu-item-object-custom{% if child.url == page.url %} current-menu-item current_page_item{% endif %}">
+            <a href="{{ child.url | relative_url }}">{{ child.page }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

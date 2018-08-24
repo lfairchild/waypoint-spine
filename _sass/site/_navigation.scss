@@ -1,0 +1,74 @@
+.header-top .wrap::after {
+	display: none;
+}
+
+.main-navigation {
+	clear: both;
+	display: block;
+}
+
+.main-navigation ul {
+	background: #111;
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0 1.5em;
+	text-align: left;
+}
+
+.main-navigation ul.nav-menu {
+	margin-bottom: 1em;
+	padding: 0 1.5em;
+}
+
+.main-navigation ul ul {
+	padding: 0 0 0 1.5em;
+}
+
+.main-navigation ul ul a {
+	letter-spacing: 0;
+	padding: 0.4em 0;
+	position: relative;
+	text-transform: none;
+}
+
+.main-navigation a {
+	display: block;
+	padding: 0.75em 0;
+	text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle {
+	background-color: transparent;
+	border: 1px solid rgba(255,255,255,0.2);
+	box-shadow: none;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 1em 0;
+	padding: 0.5em 1.0em;
+	text-shadow: none;
+}
+
+.main-navigation.toggled ul {
+	display: block;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.menu-toggle::before {
+	content: "\f419";
+	margin-right: 0.5em;
+	position: relative;
+	top: -2px;
+}
+
+.toggled .menu-toggle::before {
+	content: "\f406";
+}

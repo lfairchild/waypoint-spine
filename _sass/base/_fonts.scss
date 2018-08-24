@@ -1,0 +1,29 @@
+@include font-face("Work Sans", "../fonts/work-sans-800") {
+  font-style: normal;
+  font-weight: 800;
+}
+
+@include font-face("Karla", "../fonts/karla-400") {
+  font-style: normal;
+  font-weight: 400;
+}
+
+@include font-face("Karla", "../fonts/karla-400-italic") {
+  font-style: italic;
+  font-weight: 400;
+}
+
+@include font-face("Karla", "../fonts/karla-700") {
+  font-style: normal;
+  font-weight: 700;
+}
+
+@include font-face("Karla", "../fonts/karla-700-italic") {
+  font-style: italic;
+  font-weight: 700;
+}
+
+@include font-face("Genericons", "../fonts/genericons", ("ttf", "woff")) {
+  font-style: normal;
+  font-weight: normal;
+}

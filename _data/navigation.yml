@@ -1,0 +1,27 @@
+main:
+  - page: Home
+    url: /
+    children: []
+  - page: Locations
+    url: /locations/
+    children:
+      - page: Stevens Point, WI
+        url: /locations/stevens-point-wi/
+      - page: Wausau, WI
+        url: /locations/wausau-wi/
+  - page: Team
+    url: /team/
+    children:
+      - page: Todd A. Fairchild, M.D.
+        url: /team/todd-fairchild/
+      - page: Jason Potocki, M.D.
+        url: /team/jason-potocki/
+      - page: Andrew T. Przlomski, M.D.
+        url: /team/andrew-przlomski/
+      - page: Michael W. Cavanaugh, PA-C
+        url: /team/michael-cavanaugh/
+      - page: Amy B. Schnitzler, PT
+        url: /team/amy-schnitzler/
+  - page: About
+    url: /about/
+    children: []

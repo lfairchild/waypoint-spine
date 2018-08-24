@@ -1,45 +1,144 @@
-html {
-  color: $base-font-color;
-  font-family: $base-font-family;
-  font-size: 100%;
-  line-height: $base-line-height;
+body,
+button,
+input,
+select,
+textarea {
+	color: #333;
+	font-family: "Karla", "Helvetica Neue", helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: "Work Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 0.1em;
+	line-height: 1.25;
+	margin: 0 0 0.75em;
+	padding: 0.75em 0 0 0;
+	text-transform: uppercase;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	padding-top: 0;
+}
+
+h1 {
+	font-size: 30px;
+	font-size: 1.875rem;
+}
+
+h2 {
+	font-size: 26px;
+	font-size: 1.625rem;
+}
+
+h3 {
+	font-size: 22px;
+	font-size: 1.375rem;
+}
+
+h4 {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+h5 {
+	font-size: 16px;
+	font-size: 1rem;
+}
+
 h6 {
-  font-family: $heading-font-family;
-  font-size: modular-scale(1);
-  line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 p {
-  margin: 0 0 $small-spacing;
+	margin: 0 0 1.5em;
+	padding: 0;
 }
 
-a {
-  color: $action-color;
-  text-decoration-skip: ink;
-  transition: color $base-duration $base-timing;
-
-  &:hover {
-    color: shade($action-color, 25%);
-  }
-
-  &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
-  }
+dfn, cite, em, i {
+	font-style: italic;
 }
 
-hr {
-  border-bottom: $base-border;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: $base-spacing 0;
+blockquote {
+	border-left: 4px solid #ddd;
+	margin: 0 2em;
+	padding: 0 0 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: "";
+}
+
+:focus {
+	outline: none;
+}
+
+/* Genericons */
+
+.menu-toggle::before,
+.menu-item-has-children > a::after,
+.page_item_has_children > a::after,
+.bypostauthor::before {
+	font-family: Genericons;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: auto;
 }

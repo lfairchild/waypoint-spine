@@ -1,0 +1,83 @@
+/* Post Flair */
+
+.entry-content div.sharedaddy h3,
+.entry-content div.sharedaddy h3.sd-title,
+.entry-content div#jp-relatedposts h3.jp-relatedposts-headline {
+	color: #666;
+	font-family: "Karla", "Helvetica Neue", helvetica, arial, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.entry-content div#jp-relatedposts h3.jp-relatedposts-headline em {
+	font-weight: normal;
+}
+
+.sd-rating + .sd-sharing-enabled {
+	padding-top: 1em;
+	margin: 1em 0;
+}
+
+.jp-relatedposts-post-img {
+	margin-bottom: 0.5em;
+}
+
+#wpstats {
+    display: none;
+}
+
+
+.jetpack-social-navigation ul {
+	display: block;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.jetpack-social-navigation li {
+	display: inline-block;
+	margin: 0;
+	line-height: 1;
+}
+
+.jetpack-social-navigation a {
+	border: 0;
+	height: 1em;
+	text-decoration: none;
+	width: 1em;
+}
+
+.jetpack-social-navigation a:before {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	font-family: Genericons;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: normal;
+	height: 1em;
+	line-height: 35px;
+	speak: none;
+	text-decoration: inherit;
+	vertical-align: top;
+	width: 1em;
+}
+
+.jetpack-social-navigation a[href*="facebook.com"]:before {
+	content: "\f204";
+}
+
+.jetpack-social-navigation a[href*="twitter.com"]:before {
+	content: "\f202";
+}
+
+.jetpack-social-navigation a[href*="linkedin.com"]:before {
+	content: "\f208";
+}
+
+.jetpack-social-navigation a[href*="youtube.com"]:before {
+	content: "\f213";
+}
+

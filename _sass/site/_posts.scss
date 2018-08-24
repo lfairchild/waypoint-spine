@@ -1,0 +1,185 @@
+/* Post Landing Page */
+
+.sticky {
+	display: block;
+}
+
+.entry-title a {
+	color: #333;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.entry-title a:hover,
+.entry-title a:focus {
+	 color: #666;
+}
+
+.entry-meta {
+	color: #aaa;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.date-hidden .byline-prefix,
+.date-hidden.author-hidden .cat-prefix,
+.blog .sticky .byline-prefix,
+.blog.author-hidden .sticky .cat-prefix {
+	text-transform: capitalize;
+}
+
+.blog .sticky .posted-on {
+	display: none;
+}
+
+/* Entry Header */
+
+.entry-header {
+	margin-bottom: 2.5em;
+}
+
+.entry-header .entry-title {
+	margin-bottom: 0.25em;
+}
+
+/* Entry content */
+
+.entry-content h1,
+.entry-content h2 {
+	color: #ccc;
+}
+
+.entry-content h3,
+.entry-content h4 {
+	color: #333;
+}
+
+.entry-content h5,
+.entry-content h6 {
+	color: #666;
+}
+
+/* Entry footer */
+.entry-footer .cat-links,
+.entry-footer .tags-links,
+.entry-footer .comments-link,
+.entry-footer .edit-link {
+	margin-right: 2em;
+}
+
+.entry-footer span:last-child {
+	margin-right: 0;
+}
+
+/* Blog landing, search, archives */
+
+.blog .post,
+.archive:not(.woocommerce-active) .post,
+.search .post,
+.search .page,
+.archive .jetpack-portfolio,
+.search .jetpack-portfolio,
+.lodestar-panel .jetpack-portfolio {
+	padding-bottom: 2em;
+}
+
+body:not(.lodestar-front-page) .entry-header,
+.lodestar-panel .jetpack-portfolio .entry-header,
+body:not(.lodestar-front-page) .entry-footer,
+.lodestar-panel .jetpack-portfolio .entry-footer {
+	padding: 1em 0;
+}
+
+body:not(.lodestar-front-page) .entry-header,
+.lodestar-panel .jetpack-portfolio .entry-header,
+body:not(.lodestar-front-page) .entry-content,
+.lodestar-panel .jetpack-portfolio .entry-content,
+body:not(.lodestar-front-page) .entry-footer,
+.lodestar-panel .jetpack-portfolio .entry-footer,
+body:not(.lodestar-front-page) .post-navigation,
+body:not(.lodestar-front-page) #comments {
+	margin: auto;
+}
+
+body:not(.lodestar-front-page) .entry-header,
+.lodestar-panel .jetpack-portfolio .entry-header {
+	padding-top: 0;
+}
+
+
+/* Single Posts */
+
+.post-navigation .nav-links {
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 1em 0;
+}
+
+.nav-subtitle {
+	display: block;
+	font-size: 90%;
+	font-weight: bold;
+	font-weight: 800;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.post-navigation .nav-next {
+	margin-top: 1.5em;
+}
+
+/* Author Bio */
+
+.entry-author {
+	border-top: 1px solid #ccc;
+	margin: 2em 0 0;
+	padding: 2em 0 0;
+}
+
+.entry-author .author-avatar {
+	float: left;
+	margin-right: 1em;
+}
+
+.entry-author .avatar-container {
+	border-radius: 30px;
+	display: block;
+	height: 60px;
+	overflow: hidden;
+	width: 60px;
+}
+
+.entry-author h2,
+.entry-author h3 {
+	display: inline;
+	float: none;
+	font-size: 16px;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+.entry-author .author-heading,
+.entry-author .author-bio {
+	float: right;
+	width: calc(100% - 80px);
+}
+
+.entry-author .author-link::before {
+	content: "";
+	display: block;
+}
+
+.author-meta {
+  display: block;
+  color: #999;
+}

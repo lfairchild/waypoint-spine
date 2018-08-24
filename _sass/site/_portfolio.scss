@@ -1,0 +1,29 @@
+.portfolio-content .page-content {
+	margin-bottom: 2.0em;
+}
+
+.project-terms {
+	margin-bottom: 1.5em;
+}
+
+.project-terms ul,
+.project-terms ul li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.project-terms a {
+	display: inline-block;
+	margin: 0 0.3em;
+}
+
+.project-terms a.current-type {
+	color: #333;
+}
+
+.portfolio-wrapper {
+	padding-bottom: 2em;
+	position: relative;
+}

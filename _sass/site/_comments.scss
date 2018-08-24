@@ -1,0 +1,82 @@
+#comments {
+	padding-top: 2em;
+}
+
+.comments-title {
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+.comment-list,
+.comment-list .children {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.comment-body {
+	margin-bottom: 3em;
+	padding-left: 100px;
+}
+
+.children {
+	padding-left: 40px;
+}
+
+.comment-content p:last-child {
+	margin-bottom: 0;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	position: relative;
+}
+
+.bypostauthor::before {
+	background: #333;
+	border-radius: 30px;
+	color: #fff;
+	content: "\f408";
+	display: block;
+	height: 22px;
+	left: 0;
+	line-height: 21px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 22px;
+	z-index: 2;
+}
+
+.children .bypostauthor::before {
+	left: 20px;
+}
+
+.comment-author {
+	position: relative;
+}
+
+.comment-author .avatar-container {
+	border-radius: 70px;
+	display: block;
+	float: left;
+	height: 80px;
+	left: -100px;
+	overflow: hidden;
+	position: absolute;
+	width: 80px;
+}
+
+.children .comment-author .avatar-container {
+	height: 60px;
+	left: -80px;
+	width: 60px;
+}
+
+.no-comments,
+.comment-awaiting-moderation {
+	font-style: italic;
+}

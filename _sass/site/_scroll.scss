@@ -1,0 +1,48 @@
+#infinite-handle {
+	clear: both;
+	padding: 0 0 4em;
+	text-align: center;
+}
+
+.portfolio-projects #infinite-handle {
+	padding: 2em 0;
+}
+
+#infinite-handle span {
+	background: transparent;
+	border-radius: 0;
+	font-size: inherit;
+	padding: 0;
+}
+
+.infinite-loader {
+	clear: both;
+	padding: 2.5em 0 4em;
+}
+
+.portfolio-projects .infinite-loader {
+	padding: 3em 0 2em;
+}
+
+.infinite-loader .spinner {
+	left: 50% !important; /* !important to override inline styles */
+	margin-left: -9px;
+	top: 0 !important; /* !important to override inline styles */
+}
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+#infinite-footer .container {
+	max-width: 100%;
+}
+

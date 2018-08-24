@@ -1,0 +1,52 @@
+.jetpack-testimonial {
+	padding-bottom: 4em;
+}
+
+.jetpack-testimonial .post-thumbnail {
+	border-radius: 50px;
+	display: block;
+	float: left;
+	height: 80px;
+	margin: 0 0.5em 0 0;
+	overflow: hidden;
+	width: 80px;
+  line-height: 80px;
+  background: linear-gradient(#A1A7B4, #888D94);
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.testimonial-about {
+	margin-left: 30px;
+	margin-top: -70px;
+}
+
+.testimonial-about .entry-header {
+	float: left;
+	min-height: 80px;
+	vertical-align: middle;
+}
+
+body .jetpack-testimonial .entry-header {
+	padding-top: 0.5em;
+}
+
+body:not(.logged-in) .jetpack-testimonial .entry-header {
+	padding-top: 1.5em;
+}
+
+.jetpack-testimonial .entry-header h2 {
+	font-size: 1em;
+}
+
+.jetpack-testimonial .entry-content {
+	border: 2px solid #eee;
+	font-size: 1.2em;
+	padding: 30px 30px 70px;
+}
+
+.jetpack-testimonial .entry-content p:last-child {
+	margin-bottom: 0.75em
+}
