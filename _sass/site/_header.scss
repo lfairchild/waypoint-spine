@@ -111,3 +111,14 @@ body:not(.no-header-image) .custom-header-image::before,
 	right: 0;
 	top: 0;
 }
+
+
+body:not(.no-header-image) .custom-header-image-featured::before,
+.lodestar-front-page .custom-header-image-featured::before {
+	background: none;
+}
+
+.custom-header-image-featured .site-branding {
+  visibility: hidden;
+}
+
