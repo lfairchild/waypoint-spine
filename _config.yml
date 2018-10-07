@@ -7,4 +7,4 @@ timezone: America/Chicago
 
 permalink: pretty
 
-exclude: ['Gemfile', 'Gemfile.lock', 'CNAME']
+exclude: ['Gemfile', 'Gemfile.lock', 'CNAME', 'locations.html', 'team.html', 'about.html', 'praise.html', 'locations', 'team', 'map.html']
