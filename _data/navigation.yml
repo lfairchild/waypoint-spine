@@ -5,9 +5,9 @@ main:
   - page: Locations
     url: /locations/
     children:
-      - page: Stevens Point, WI
+      - page: Dr. Jason J. Potocki &mdash; Stevens Point, WI
         url: /locations/stevens-point-wi/
-      - page: Wausau, WI
+      - page: Dr. Todd A. Fairchild &mdash; Wausau, WI
         url: /locations/wausau-wi/
   - page: Team
     url: /team/

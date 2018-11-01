@@ -23,8 +23,8 @@
         var center = {lat: 44.793740, lng: -89.648149};
         
         var locations = [
-          ["{{ "/locations/stevens-point-wi/" | relative_url }}", 44.530215, -89.576768],
-          ["{{ "/locations/wausau-wi/" | relative_url }}", 44.926450, -89.652127]
+          ["{{ "/locations/stevens-point-wi/" | relative_url }}", 44.530215, -89.576768, "{{ "/assets/img/icon-jason-potocki.png" | relative_url }}"],
+          ["{{ "/locations/wausau-wi/" | relative_url }}", 44.926450, -89.652127, "{{ "/assets/img/icon-todd-fairchild.png" | relative_url }}"]
         ];
         
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -36,7 +36,8 @@
         for (var index = 0; index < locations.length; index++) {
           var marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[index][1], locations[index][2]),
-            map: map
+            map: map,
+            icon: locations[index][3]
           });
 
           google.maps.event.addListener(marker, 'click', (function (marker, index) {
