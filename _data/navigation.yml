@@ -9,6 +9,10 @@ main:
         url: /locations/stevens-point-wi/
       - page: Wausau, WI
         url: /locations/wausau-wi/
+      - page: Marshfield, WI
+        url: /locations/marshfield-wi/
+      - page: Minocqua, WI
+        url: /locations/minocqua-wi/
   - page: Team
     url: /team/
     children:
