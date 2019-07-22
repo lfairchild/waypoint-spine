@@ -20,13 +20,10 @@
     <div id="map"></div>
     <script>
       function initMap() {
-        //var center = {lat: 44.793740, lng: -89.648149};
         var center = {lat: 45.1817286, lng: -89.738162};
         
         var locations = [
-          //["{{ "/locations/stevens-point-wi/" | relative_url }}", 44.530215, -89.576768, "{{ "/assets/img/icon-jason-potocki.png" | relative_url }}"],
           ["{{ "/locations/stevens-point-wi/" | relative_url }}", 44.530215, -89.576768, "{{ "/assets/img/logo-small.png" | relative_url }}"],
-          //["{{ "/locations/wausau-wi/" | relative_url }}", 44.926450, -89.652127, "{{ "/assets/img/icon-todd-fairchild.png" | relative_url }}"]
           ["{{ "/locations/wausau-wi/" | relative_url }}", 44.926450, -89.652127, "{{ "/assets/img/logo-small.png" | relative_url }}"],
           ["{{ "/locations/marshfield-wi/" | relative_url }}", 44.686657, -90.189021, "{{ "/assets/img/logo-small.png" | relative_url }}"],
           ["{{ "/locations/minocqua-wi/" | relative_url }}", 45.829413, -89.716877, "{{ "/assets/img/logo-small.png" | relative_url }}"]
@@ -53,6 +50,6 @@
         }
       };
       </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwvmCQZJ9tMLFFnJOcEeMwOi93WDbskW0&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwvmCQZJ9tMLFFnJOcEeMwOi93WDbskW0&callback=initMap"></script>
   </body>
 </html>
