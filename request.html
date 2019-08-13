@@ -13,93 +13,45 @@ description: Request an appointment at Waypoint Spine.
 	</div>  
 </article>
 
-<!-- <h2>HTML Forms</h2> -->
-<!-- <form action="/action_page.php"> -->
 <form method="POST" action="https://formspree.io/lukemfairchild@gmail.com">
-  <fieldset>
-  <!--   <legend>Personal Information</legend> -->
+  <!-- <fieldset> -->
+  <div class="input-group">
   Name:<br>
   <input type="text" name="firstname" placeholder="First">
-  <br>
   <input type="text" name="lastname" placeholder="Last">
-  <br><br>
+  <br>
+  </div>
+  <br>
+  <div class="input-group">
   Phone Number:<br>
-  <!-- <input type="tel" name="phone" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> -->
-  <input type="tel" name="phone" placeholder="(123) 123-1234">
-  <br><br>
+  <input id="phone_us" class="phone_us" type="text" maxlength="14" name="phone_us" data-mask="(000) 000-0000" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}">
+  </div>
+  <br>
+  <div class="input-group">
   Email:<br>
   <input type="email" name="email" placeholder="Email">
-  <br><br>
+  </div>
+  <br>
+  <div class="input-group">
   Which location would you prefer?<br>
-   <select name="location"> 
+   <select name="location" required> 
+     <option hidden disabled selected value> -- select a location -- </option>
      <option value="stevens-point">Stevens Point</option> 
      <option value="wausau">Wausau</option> 
+     <option value="marshfield">Marshfield</option> 
+     <option value="minocqua">Minocqua</option> 
    </select>
-  <br><br>
+  </div>
+  <br>
+  <div class="input-group">
   How do you prefer we get in touch with you?<br>
-   <select name="pref_contact"> 
+   <select name="pref_contact" required> 
+     <option hidden disabled selected value> -- select an option -- </option>
      <option value="phone">Phone</option> 
      <option value="email">Email</option> 
    </select>
-  </fieldset>
-  <br><br>
+  </div>
+  <br>
   <input type="submit" value="Submit">
 </form>
 
-<!-- <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p> -->
-
-<!-- <div class="testimonials"> -->
-
-<!-- 	<article class="jetpack-testimonial type-jetpack-testimonial status-publish has-post-thumbnail hentry"> -->
-
-<!-- 	  <div class="entry-content"> -->
-<!-- 		  <p>Curabitur orci ipsum, sodales vel ullamcorper sit amet, porta sed leo. Curabitur mattis lorem lectus, eu auctor felis mattis sit amet. Aliquam nibh justo, pharetra vel gravida sit amet, dictum vel massa. Sed pulvinar ante turpis, at lobortis urna pharetra in. Nulla facilisi. Mauris neque magna, gravida nec consequat sit amet, sagittis nec neque.</p> -->
-<!-- 	  </div> -->
-<!-- 	  <div class="testimonial-about"> -->
-<!-- 			<div class="post-thumbnail">BL</div> -->
-<!-- 			<header class="entry-header"> -->
-<!-- 			  <h2 class="entry-title">Betty Lorem</h2> -->
-<!--       </header> -->
-<!-- 	  </div> -->
-<!--   </article> -->
-  
-<!--   <article class="jetpack-testimonial type-jetpack-testimonial status-publish has-post-thumbnail hentry"> -->
-
-<!-- 	  <div class="entry-content"> -->
-<!-- 		  <p>Suspendisse potenti. Nullam ac lobortis quam, id efficitur massa. Aenean ornare faucibus ornare. Pellentesque vitae ultricies orci. Aliquam sit amet dolor ac orci consectetur cursus. Nunc faucibus fermentum nisl sit amet viverra. Aliquam nisi libero, cursus sit amet purus ac, luctus sodales urna.</p> -->
-<!-- 	  </div> -->
-<!-- 	  <div class="testimonial-about"> -->
-<!-- 			<div class="post-thumbnail">BE</div> -->
-<!-- 			<header class="entry-header"> -->
-<!-- 			  <h2 class="entry-title">Bob Example</h2> -->
-<!--       </header> -->
-<!-- 	  </div> -->
-<!--   </article> -->
-<!--   <article class="jetpack-testimonial type-jetpack-testimonial status-publish has-post-thumbnail hentry"> -->
-
-<!-- 	  <div class="entry-content"> -->
-<!-- 		  <p>Curabitur orci ipsum, sodales vel ullamcorper sit amet, porta sed leo. Curabitur mattis lorem lectus, eu auctor felis mattis sit amet. Aliquam nibh justo, pharetra vel gravida sit amet, dictum vel massa. Sed pulvinar ante turpis, at lobortis urna pharetra in. Nulla facilisi.</p> -->
-<!-- 	  </div> -->
-<!-- 	  <div class="testimonial-about"> -->
-<!-- 			<div class="post-thumbnail">JS</div> -->
-<!-- 			<header class="entry-header"> -->
-<!-- 			  <h2 class="entry-title">John Smith</h2> -->
-<!--       </header> -->
-<!-- 	  </div> -->
-
-<!--   </article> -->
-<!--   <article class="jetpack-testimonial type-jetpack-testimonial status-publish has-post-thumbnail hentry"> -->
-
-<!-- 	  <div class="entry-content"> -->
-<!-- 		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris purus urna, vulputate at convallis hendrerit, mattis id mi. Nulla mauris justo, sodales vitae sodales nec, fermentum at elit. Proin condimentum risus sed venenatis mollis. Donec auctor euismod sodales. Donec sodales congue metus, sit amet tempor odio maximus in. Ut vestibulum nisl a maximus scelerisque. Donec aliquam eleifend metus, eget iaculis ante vestibulum id. Nulla facilisi.</p> -->
-<!-- 	  </div> -->
-<!-- 	  <div class="testimonial-about"> -->
-<!-- 			<div class="post-thumbnail">JD</div> -->
-<!-- 			<header class="entry-header"> -->
-<!-- 			  <h2 class="entry-title">Jane Doe</h2> -->
-<!--       </header> -->
-<!-- 	  </div> -->
-
-<!--   </article> -->
-
-<!-- </div> -->
