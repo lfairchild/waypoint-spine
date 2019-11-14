@@ -43,8 +43,9 @@ body:not(.logged-in) .jetpack-testimonial .entry-header {
 
 .jetpack-testimonial .entry-content {
 	border: 2px solid #eee;
-	font-size: 1.2em;
+	font-size: 0.85em;
 	padding: 30px 30px 70px;
+	font-style: italic;
 }
 
 .jetpack-testimonial .entry-content p:last-child {
