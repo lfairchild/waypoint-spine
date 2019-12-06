@@ -31,3 +31,6 @@ main:
   - page: About
     url: /about/
     children: []
+  - page: Reviews
+    url: /reviews/
+    children: []
