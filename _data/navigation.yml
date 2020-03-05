@@ -9,23 +9,15 @@ main:
         url: /locations/stevens-point-wi/
       - page: Wausau, WI
         url: /locations/wausau-wi/
-      - page: Marshfield, WI
-        url: /locations/marshfield-wi/
-      - page: Minocqua, WI
-        url: /locations/minocqua-wi/
   - page: Team
     url: /team/
     children:
       - page: Todd A. Fairchild, M.D.
         url: /team/todd-fairchild/
-      - page: Jason J. Potocki, M.D.
-        url: /team/jason-potocki/
       - page: Andrew T. Przlomski, M.D.
         url: /team/andrew-przlomski/
       - page: Michael W. Cavanaugh, PA-C
         url: /team/michael-cavanaugh/
-      - page: Tyler P. Laber, PA-C
-        url: /team/tyler-laber/
       - page: Amy B. Schnitzler, PT
         url: /team/amy-schnitzler/
   - page: About
