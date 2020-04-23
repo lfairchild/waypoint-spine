@@ -6,6 +6,12 @@
 	background-color: #333;
 }
 
+.header-notice {
+	p { margin: 0; padding: 10px; font-size: 12px; text-align: center; }
+	a { color: #fff; text-decoration: underline; }
+	a:hover { text-decoration: none; }
+}
+
 /* Header top */
 .header-top {
 	background-color: #29292a;
