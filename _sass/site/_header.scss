@@ -17,7 +17,8 @@
 }
 
 .header-top .header-notice {
-	background-color { #eee; }
+	text-transform: none;
+	background-color: #eee;
 	p { margin: 0; padding: 10px; font-size: 12px; text-align: center; }
 	a { color: #000; text-decoration: underline; }
 	a:hover { text-decoration: none; }
