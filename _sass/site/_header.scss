@@ -16,15 +16,6 @@
 	text-transform: uppercase;
 }
 
-.header-top .header-notice {
-	text-transform: none;
-	background-color: #eee;
-	p { margin: 0; padding: 10px; font-size: 12px; }
-	a { color: #000; text-decoration: underline; }
-	a:hover { text-decoration: none; }
-}
-
-
 .header-top .wrap {
 	padding: 0;
 }
@@ -40,6 +31,16 @@
 .header-top a:focus {
 	color: rgba(255,255,255,0.7);
 }
+
+.header-top .header-notice {
+	background-color: #eee;
+	p { margin: 0; padding: 10px; font-size: 12px; }
+	a, a:visited { color: #000; text-decoration: underline; }
+	a:hover, a:focus { color: #000; text-decoration: none; }
+}
+
+
+
 
 .site-top-content {
 	line-height: 1.5;
