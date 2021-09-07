@@ -35,11 +35,14 @@
 	    <header id="masthead" class="site-header" role="banner">
 		    <div class="header-top">
 		    <div class="header-notice">
-			    <p><a href="{{ "/covid19" | relative_url }}"><span class="header-notice-text">Learn about the actions we're taking to address the impact of</span> <span class="header-notice-alert">COVID-19</span></a></p>
+			    <p><a href="#marshfield_notification"><span class="header-notice-text"><span
+                    class="header-notice-alert">Important notice to patients: Waypoint Spine
+                    providers have transitioned to Marshfield Clinic. See below or click here for
+                    further information.</span></a></p>
 		    </div>
 			    
 			    <div class="wrap">
-            {% include navigation.html %}
+            <!-- {% include navigation.html %} -->
 					  <div class="site-top-content">
 		          <span class="site-top-content-1">Call:</span>
                   <span class="site-top-content-2" style="margin-left: 0;"><a href="tel:1-715-544-1775">(715) 544-1775</a></span>
@@ -50,7 +53,8 @@
           {% if page.featured_image_path %}
 			    <div class="custom-header-image custom-header-image-featured" style="background-image: url({{ page.featured_image_path | relative_url }})">
           {% else %}
-			    <div class="custom-header-image" style="background-image: url({{ "/assets/img/action-todd-fairchild.jpg" | relative_url }})">
+			    <div class="custom-header-image" style="background-color: #222">
+			    <!-- <div class="custom-header-image" style="background-image: url({{ "/assets/img/action-todd-fairchild.jpg" | relative_url }})"> -->
           {% endif %}
 				    <div class="site-branding">
 	            <div class="wrap">
